@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="800px" height="600px" style="border: 1px solid red;"></canvas>
+	</body>
+</html>
+<script type="text/javascript">
+	var obj=document.getElementById("canvas");
+	var canvas=obj.getContext("2d");
+	var img=document.createElement("img");
+		img.setAttribute("src","img/xxx1.jpg");
+		img.onload=function(){
+			var i=0;
+			setInterval(function(){
+				canvas.clearRect(0,0,800,500);
+				canvas.drawImage(img,i%4*75.5,0,75.5,97,i%8*75.5,0,75.5,97);
+				i++;
+			},1000);
+		}
+</script>

@@ -1,0 +1,61 @@
+.login{
+	position: fixed;
+	height: 650px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	/*z-index: 3*/;
+}
+.login>.cover{
+	background-attachment: fixed;
+	height: 650px;
+	width: 100%;
+	background: black;
+	opacity: 0.3;
+	position: absolute;
+}
+.login>form{
+	position: absolute;
+	z-index: 2;
+	top: 30%;
+	left: 30%;
+	height: 300px;
+	width: 500px;
+	background-color: #6495ED;
+	transition: all linear .5s; 
+	opacity: 0;
+}
+.login>form>h2{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-family: "楷体";
+	color:blue;
+	background-color: darkturquoise;
+}
+.login>form>.form_1{
+	height: 200px;
+	width: 300px;
+	margin: 10px auto 100px auto;
+}
+.login>form>.form_1>input{
+	width: 75%;
+	height: 20px;
+	margin: 5px 0;
+}
+.login>form>.form_1>input.check{
+	width: 20px;
+	height: 20px;
+}
+.login>form>.form_1>input:last-child{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin-right: 5px;
+	background-color: mediumspringgreen;
+}
+/*.login>form>input:first-child{margin-top: 100px;}
+.login>form>input{height: 20px;width: 75%;margin: 10px auto;}
+.login>form>input:last-child{margin-left: 50px;}*/
+
